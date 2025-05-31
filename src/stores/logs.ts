@@ -57,6 +57,7 @@ export const useLogsStore = defineStore('logs', {
 						startTime: entry.startTime,
 						endTime: entry.endTime,
 						duration: `${minutes}m ${seconds}s`,
+						durationSeconds: duration / 1000,
 						name: entry.name,
 						id: entry.id,
 						// Determine the status based on the duration
