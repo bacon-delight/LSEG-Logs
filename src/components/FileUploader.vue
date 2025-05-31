@@ -6,6 +6,7 @@
 		:multiple="false"
 		:maxFileSize="1000000"
 		:auto="true"
+		chooseLabel="Select Log File"
 	/>
 </template>
 

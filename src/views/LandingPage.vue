@@ -1,6 +1,8 @@
 <template>
-	<div>Landing Page</div>
-	<RouterLink to="/dashboard">Dashboard</RouterLink>
+	<div>
+		<h1>Log Monitoring</h1>
+		<p>Select a file to view insights</p>
+	</div>
 	<FileUploader @upload="handleUpload" />
 </template>
 
@@ -25,3 +27,13 @@ export default defineComponent({
 	},
 })
 </script>
+
+<style scoped>
+div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10rem;
+}
+</style>

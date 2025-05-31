@@ -2,6 +2,7 @@ import type { RawLogs } from './types.interface'
 
 const csv_to_json = (csv: string): RawLogs[] => {
 	const lines = csv.split('\n')
+	// Initialize custome headers in the same order as the CSV columns
 	const headers = ['time', 'name', 'type', 'id']
 	const result: RawLogs[] = []
 
